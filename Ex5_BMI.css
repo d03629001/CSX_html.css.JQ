@@ -1,0 +1,12 @@
+$('button').on('click', function() {
+    var h = $('#height').val();
+    var w = $('#weight').val();
+
+    h = Number(h) / 100;
+    w = Number(w);
+
+    var hh = h * h;
+
+    var bmi = w / hh;
+    $('#result').val(bmi);
+})
