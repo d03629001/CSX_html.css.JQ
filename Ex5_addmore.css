@@ -1,0 +1,148 @@
+@import url('http://fonts.googleapis.com/css?family=Noto+Sans');
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 3em;
+}
+
+nav ul {
+    text-align: right;
+    padding: 0;
+    margin-right: 5.2em;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 2em;
+    color: #fff;
+}
+
+#section1 {
+    height: 100vh;
+    background-image: url(../image/bg.jpg);
+    background-size: 100%;
+    background-size: cover;
+}
+
+#section1 h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 3.5em;
+    padding-top: 3.8em;
+    color: #fff;
+}
+
+.start {
+    text-align: center;
+}
+
+#start {
+    cursor: pointer;
+    padding: 0.4em 2em;
+    font-size: 1.2em;
+    border-color: #ffc107;
+    color: #111111;
+    background-color: transparent;
+    border-radius: 0.5em;
+    font-size: 1.2em;
+    margin-top: 2em;
+}
+
+#start:hover {
+    color: #fff;
+    background-color: #ffc107;
+}
+
+#section2>div:first-child {
+    color: #454545;
+    text-align: center;
+}
+
+#section2>div:nth-child(2) {
+    border-bottom: 5px #ffc107 solid;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.container {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: 80vw;
+}
+
+.block {
+    width: 30%;
+    float: left;
+    height: 500px;
+}
+
+.block:nth-child(3n+2) {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.block img {
+    width: 100%;
+    height: 55%;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15)
+}
+
+.des {
+    text-align: center;
+}
+
+.des p:first-child {
+    color: #2a8590;
+    font-size: 1.2rem;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.25)
+}
+
+.des p:nth-child(2) {
+    margin-bottom: 30px;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: #FFF;
+    background-color: #f0ad4e;
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+@media (max-width:1024px) {
+    .block {
+        width: 45%;
+    }
+    .block:nth-child(3n+2) {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .block:nth-child(2n) {
+        margin-left: 5%;
+    }
+}
+
+@media (max-width:764px) {
+    .block {
+        width: 100%;
+    }
+    .block:nth-child(2n) {
+        margin-left: 0;
+    }
+}
